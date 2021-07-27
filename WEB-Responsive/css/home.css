@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    background-color: aquamarine;
+}
+
+.navbar {
+    background-color: violet;
+    display: block;
+    text-align: center;
+    float: left;
+    width: 100%;
+}
+
+.navbar-left {
+    float: left;
+    padding: 20px 30px 20px 30px;
+}
+
+.navbar-right {
+    float: right;
+    padding: 20px 30px 20px 30px;
+}
