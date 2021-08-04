@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: white;
+    box-shadow: .5px .5px 2px .5px #666666;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    align-items: center;
+    img {
+        width: 70px;
+    }
+    .menu {
+        display: flex;
+        .phone,
+        .address,
+        .about {
+            padding: 20px;
+        }
+        .phone {
+            background-color: gray;
+            border-radius: 10px;
+            color: white;
+        }
+    }
+}

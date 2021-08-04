@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: white;
+  -webkit-box-shadow: .5px .5px 2px .5px #666666;
+          box-shadow: .5px .5px 2px .5px #666666;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: bold;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header img {
+  width: 70px;
+}
+
+header .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .menu .phone,
+header .menu .address,
+header .menu .about {
+  padding: 20px;
+}
+
+header .menu .phone {
+  background-color: gray;
+  border-radius: 10px;
+  color: white;
+}
+/*# sourceMappingURL=bt3.css.map */
