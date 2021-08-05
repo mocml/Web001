@@ -5,17 +5,31 @@
 
 header {
     background-color: white;
-    box-shadow: .5px .5px 2px .5px #666666;
+    box-shadow: 0.5px 0.5px 2px 0.5px #666666;
     color: black;
     display: flex;
     justify-content: space-between;
     font-weight: bold;
-    align-items: center;
-    img {
-        width: 70px;
+    .menuleft {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 18px;
+        .name,
+        .age {
+            padding: 25px;
+        }
+        img {
+            width: 75px;
+            //display block to remove backspace under img
+            display: block;
+        }
     }
     .menu {
         display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        font-size: 18px;
         .phone,
         .address,
         .about {
@@ -26,5 +40,11 @@ header {
             border-radius: 10px;
             color: white;
         }
+    }
+    a,
+    a:active,
+    a:visited {
+        color: black;
+        text-decoration: none;
     }
 }

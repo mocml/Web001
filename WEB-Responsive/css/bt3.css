@@ -5,8 +5,8 @@
 
 header {
   background-color: white;
-  -webkit-box-shadow: .5px .5px 2px .5px #666666;
-          box-shadow: .5px .5px 2px .5px #666666;
+  -webkit-box-shadow: 0.5px 0.5px 2px 0.5px #666666;
+          box-shadow: 0.5px 0.5px 2px 0.5px #666666;
   color: black;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -15,19 +15,42 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-weight: bold;
+}
+
+header .menuleft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 18px;
 }
 
-header img {
-  width: 70px;
+header .menuleft .name,
+header .menuleft .age {
+  padding: 25px;
+}
+
+header .menuleft img {
+  width: 75px;
+  display: block;
 }
 
 header .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 18px;
 }
 
 header .menu .phone,
@@ -40,5 +63,12 @@ header .menu .phone {
   background-color: gray;
   border-radius: 10px;
   color: white;
+}
+
+header a,
+header a:active,
+header a:visited {
+  color: black;
+  text-decoration: none;
 }
 /*# sourceMappingURL=bt3.css.map */
