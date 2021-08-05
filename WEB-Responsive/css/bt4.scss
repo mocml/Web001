@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    width: 700px;
+    box-shadow: 1px 1px 2px 1px #666666;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 50px;
+    display: flex;
+    align-items: flex-start;
+    img {
+        border-radius: 20px;
+        display: block;
+        box-shadow: 2px 3px 8px 3px #666666;
+    }
+    .content {
+        margin: 20px 0px 0px 20px;
+        .title {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        .description {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .read {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 50px;
+            .readmore {
+                padding: 10px;
+                border-radius: 15px;
+                background-color: rgb(44, 39, 39);
+                color: white;
+                font-weight: bold;
+                text-decoration: none;
+                box-shadow: 1px 2px 2px 2px #666666;
+            }
+        }
+    }
+}

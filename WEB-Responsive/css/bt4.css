@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  width: 700px;
+  -webkit-box-shadow: 1px 1px 2px 1px #666666;
+          box-shadow: 1px 1px 2px 1px #666666;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.card img {
+  border-radius: 20px;
+  display: block;
+  -webkit-box-shadow: 2px 3px 8px 3px #666666;
+          box-shadow: 2px 3px 8px 3px #666666;
+}
+
+.card .content {
+  margin: 20px 0px 0px 20px;
+}
+
+.card .content .title {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.card .content .description {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.card .content .read {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 50px;
+}
+
+.card .content .read .readmore {
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #2c2727;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  -webkit-box-shadow: 1px 2px 2px 2px #666666;
+          box-shadow: 1px 2px 2px 2px #666666;
+}
+/*# sourceMappingURL=bt4.css.map */
