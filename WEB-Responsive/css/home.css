@@ -1,59 +1,200 @@
-/* chỉ nên dùng đơn vị đo tương đối (%, em , rem) */
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #333;
-    font-weight: 300;
-    margin: 0;
+* {
+  margin: 0;
+  padding: 0;
+  top: 0;
 }
 
-.header {
-    background-color: #333;
-    padding: 0.3em 1em;
-    color: #fff;
+a,
+a:active,
+a:visited {
+  text-decoration: none;
 }
 
-.content,
-.sidebar {
-    box-sizing: border-box;
+header {
+  position: fixed;
+  width: 100%;
+  background-color: gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-shadow: 2px 2px 4px 3px #666666;
+          box-shadow: 2px 2px 4px 3px #666666;
 }
 
-.content {
-    background: #e8e8e8;
-    padding: 0.3em 1em;
-    margin-bottom: 1em;
+header a,
+header a:active,
+header a:visited {
+  text-decoration: none;
+  color: lightgray;
 }
 
-.sidebar {
-    background: #c3c3c3;
-    font-size: 95%;
-    padding: 0.3em 1em;
+header img {
+  display: block;
+  width: 90px;
 }
 
-@media screen and (min-width: 768px) {
-    .main::before,
-    .main::after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-    .main {
-        max-width: 100%;
-    }
-    .content {
-        width: 63.5%;
-        float: left;
-        margin-right: 1.5%;
-    }
-    .sidebar {
-        width: 35%;
-        float: left;
-    }
+header .nb-menu {
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-@media screen and (min-width: 1024px) {
-    .container {
-        max-width: 1280px;
-        margin: 0 auto;
-    }
+header .nb-menu .nbi-home,
+header .nb-menu .nbi-product,
+header .nb-menu .nbi-service,
+header .nb-menu .nbi-contact,
+header .nb-menu .nbi-about {
+  padding: 20px 40px;
 }
+
+header .nb-menu .nbi-home {
+  color: white;
+  font-size: 24px;
+  border-radius: 20px;
+}
+
+main {
+  margin-top: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .sidebar,
+main .content {
+  padding: 25px;
+}
+
+main .sidebar {
+  border-radius: 10px;
+  -webkit-box-shadow: 1px 2px 2px 2px #666666;
+          box-shadow: 1px 2px 2px 2px #666666;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: lightseagreen;
+  min-height: 100vh;
+}
+
+main .sidebar a,
+main .sidebar a:active,
+main .sidebar a:visited {
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+}
+
+main .sidebar a {
+  padding: 20px;
+}
+
+main .sidebar .sb-home {
+  text-align: center;
+  padding: 15px 30px 15px 30px;
+  border-radius: 16px;
+  background-color: blueviolet;
+}
+
+main .content {
+  border-radius: 10px;
+  font-size: 18px;
+  -webkit-box-shadow: 1px 2px 2px 2px #666666;
+          box-shadow: 1px 2px 2px 2px #666666;
+  margin-left: 10px;
+  width: 100%;
+  background-color: lightgreen;
+}
+
+main .content .li-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .content .li-item .it-card {
+  -webkit-box-shadow: 0px 0px 10px 3px #666666;
+          box-shadow: 0px 0px 10px 3px #666666;
+  margin-bottom: 20px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  width: 500px;
+  margin-right: 20px;
+}
+
+main .content .li-item .it-card .it-card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .content .li-item .it-card .it-card-body img {
+  -webkit-box-shadow: 2px 2px 3px 2px #666666;
+          box-shadow: 2px 2px 3px 2px #666666;
+  display: block;
+  border-radius: 15px;
+}
+
+main .content .li-item .it-card .it-card-body .it-content {
+  padding: 10px;
+}
+
+main .content .li-item .it-card .it-card-body .it-title,
+main .content .li-item .it-card .it-card-body .it-description {
+  margin-bottom: 15px;
+}
+
+main .content .li-item .it-card .it-card-body .readme {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+main .content .li-item .it-card .it-card-body .readme .readmore {
+  -webkit-box-shadow: 1px 1px 2px 2px #666666;
+          box-shadow: 1px 1px 2px 2px #666666;
+  padding: 10px 15px 10px 15px;
+  background-color: gray;
+  border-radius: 20px;
+  color: white;
+}
+
+main .content .li-item .it-card .card-action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 23px;
+}
+
+main .content .li-item .it-card .card-action .navigate {
+  width: 45px;
+  height: 10px;
+  background-color: rgba(51, 51, 51, 0.3);
+  margin-left: 10px;
+  border-radius: 10px;
+}
+
+main .content .li-item .it-card .card-action .navigate.active {
+  background-color: #333;
+}
+/*# sourceMappingURL=home.css.map */

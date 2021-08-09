@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    top: 0;
+}
+
+a,
+a:active,
+a:visited {
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color: gray;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 2px 2px 4px 3px #666666;
+    a,
+    a:active,
+    a:visited {
+        text-decoration: none;
+        color: lightgray;
+    }
+    img {
+        display: block;
+        width: 90px;
+    }
+    .nb-menu {
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        .nbi-home,
+        .nbi-product,
+        .nbi-service,
+        .nbi-contact,
+        .nbi-about {
+            padding: 20px 40px;
+        }
+        .nbi-home {
+            color: white;
+            font-size: 24px;
+            border-radius: 20px;
+        }
+    }
+}
+
+main {
+    margin-top: 120px;
+    display: flex;
+    .sidebar,
+    .content {
+        padding: 25px;
+    }
+    .sidebar {
+        border-radius: 10px;
+        box-shadow: 1px 2px 2px 2px #666666;
+        display: flex;
+        flex-direction: column;
+        background-color: lightseagreen;
+        min-height: 100vh;
+        a,
+        a:active,
+        a:visited {
+            font-size: 18px;
+            text-decoration: none;
+            color: white;
+        }
+        a {
+            padding: 20px;
+        }
+        .sb-home {
+            text-align: center;
+            padding: 15px 30px 15px 30px;
+            border-radius: 16px;
+            background-color: blueviolet;
+        }
+    }
+    .content {
+        border-radius: 10px;
+        font-size: 18px;
+        box-shadow: 1px 2px 2px 2px #666666;
+        margin-left: 10px;
+        width: 100%;
+        background-color: lightgreen;
+        .li-item {
+            display: flex;
+            justify-content: space-between;
+            .it-card {
+                box-shadow: 0px 0px 10px 3px #666666;
+                margin-bottom: 20px;
+                background-color: white;
+                border-radius: 20px;
+                padding: 20px;
+                width: 500px;
+                margin-right: 20px;
+                .it-card-body {
+                    display: flex;
+                    img {
+                        box-shadow: 2px 2px 3px 2px #666666;
+                        display: block;
+                        border-radius: 15px;
+                    }
+                    .it-content {
+                        padding: 10px;
+                    }
+                    .it-title,
+                    .it-description {
+                        margin-bottom: 15px;
+                    }
+                    .readme {
+                        display: flex;
+                        justify-content: flex-end;
+                        .readmore {
+                            box-shadow: 1px 1px 2px 2px #666666;
+                            padding: 10px 15px 10px 15px;
+                            background-color: gray;
+                            border-radius: 20px;
+                            color: white;
+                        }
+                    }
+                }
+                .card-action {
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 23px;
+                    .navigate {
+                        width: 45px;
+                        height: 10px;
+                        background-color: rgba($color: #333, $alpha: 0.3);
+                        margin-left: 10px;
+                        border-radius: 10px;
+                        &.active {
+                            background-color: #333;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
